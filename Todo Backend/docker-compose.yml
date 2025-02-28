@@ -1,0 +1,36 @@
+﻿# version: '3.8'
+
+# services:
+#   backend:
+#     build: 
+#       context: ./todo backend  
+#     ports:
+#       - "5000:5000"
+#     environment:
+#       - ASPNETCORE_ENVIRONMENT=Production
+#     depends_on:
+#       - db
+
+#   frontend:
+#     build:
+#       context: ./todo-front  
+#     ports:
+#       - "80:80"
+#     depends_on:
+#       - backend
+
+#   db:
+#     image: mysql:8.0  
+#     restart: always
+#     environment:
+#       MYSQL_ROOT_PASSWORD: root
+#       MYSQL_DATABASE: tododb
+#       MYSQL_USER: todo_user
+#       MYSQL_PASSWORD: todo_pass
+#     ports:
+#       - "3306:3306"
+#     volumes:
+#       - mysql_data:/var/lib/mysql
+
+# volumes:
+#   mysql_data:
